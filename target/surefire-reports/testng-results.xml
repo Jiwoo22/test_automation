@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-11T12:41:10 PDT" name="Carina Demo Tests - API Sample" finished-at="2023-07-11T12:41:16 PDT" duration-ms="5792">
+    <groups>
+    </groups>
+    <test started-at="2023-07-11T12:41:10 PDT" name="User API tests" finished-at="2023-07-11T12:41:16 PDT" duration-ms="5792">
+      <class name="com.solvd.carina.demo.APISampleTest">
+        <test-method signature="testCreateUserMissingSomeFields()[pri:0, instance:com.solvd.carina.demo.APISampleTest@17d83fe4]" started-at="2023-07-11T12:41:10 PDT" name="testCreateUserMissingSomeFields" finished-at="2023-07-11T12:41:12 PDT" duration-ms="1731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUserMissingSomeFields -->
+        <test-method signature="testDeleteUsers()[pri:0, instance:com.solvd.carina.demo.APISampleTest@17d83fe4]" started-at="2023-07-11T12:41:10 PDT" name="testDeleteUsers" finished-at="2023-07-11T12:41:12 PDT" duration-ms="1756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUsers -->
+        <test-method signature="testGetUsers()[pri:0, instance:com.solvd.carina.demo.APISampleTest@17d83fe4]" started-at="2023-07-11T12:41:10 PDT" name="testGetUsers" finished-at="2023-07-11T12:41:12 PDT" duration-ms="1867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUsers -->
+        <test-method signature="testCreateUser()[pri:0, instance:com.solvd.carina.demo.APISampleTest@17d83fe4]" started-at="2023-07-11T12:41:10 PDT" name="testCreateUser" finished-at="2023-07-11T12:41:16 PDT" duration-ms="5762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUser -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.carina.demo.APISampleTest@17d83fe4]" started-at="2023-07-11T12:41:12 PDT" name="onCarinaAfterMethod" finished-at="2023-07-11T12:41:12 PDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onCarinaAfterMethod -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.carina.demo.APISampleTest@17d83fe4]" started-at="2023-07-11T12:41:12 PDT" name="onCarinaAfterMethod" finished-at="2023-07-11T12:41:12 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onCarinaAfterMethod -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.carina.demo.APISampleTest@17d83fe4]" started-at="2023-07-11T12:41:12 PDT" name="onCarinaAfterMethod" finished-at="2023-07-11T12:41:12 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onCarinaAfterMethod -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.carina.demo.APISampleTest@17d83fe4]" started-at="2023-07-11T12:41:16 PDT" name="onCarinaAfterMethod" finished-at="2023-07-11T12:41:16 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onCarinaAfterMethod -->
+      </class> <!-- com.solvd.carina.demo.APISampleTest -->
+    </test> <!-- User API tests -->
+  </suite> <!-- Carina Demo Tests - API Sample -->
+</testng-results>
