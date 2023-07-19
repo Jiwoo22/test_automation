@@ -2,6 +2,7 @@ package com.solvd.carina.demo;
 
 import java.util.List;
 
+import com.solvd.carina.demo.gui.pages.desktop.HomePage;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.testng.Assert;
@@ -37,7 +38,8 @@ public class WebSampleTest implements IAbstractTest {
     @TestLabel(name = "feature", value = { "web", "regression" })
     public void testModelSpecs() {
         // Open GSM Arena home page and verify page is opened
-        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
+//        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
+        HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isPageOpened(), "Home page is not opened");
 

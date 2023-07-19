@@ -1,0 +1,11 @@
+{
+    "firstname": "type:String",
+    "lastname": "type:String",
+    "totalprice": "type:Integer",
+    "depositpaid": "type:Boolean",
+    "bookingdates": {
+      "checkin": "type:String",
+      "checkout": "type:String"
+    },
+    "additionalneeds": "type:String"
+}

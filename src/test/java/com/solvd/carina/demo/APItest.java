@@ -1,43 +1,44 @@
 package com.solvd.carina.demo;
 
-import java.lang.invoke.MethodHandles;
-import java.time.temporal.ChronoUnit;
-import java.util.concurrent.atomic.AtomicInteger;
-
-import org.skyscreamer.jsonassert.JSONCompareMode;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.testng.annotations.Test;
-
-import com.zebrunner.carina.core.IAbstractTest;
 import com.solvd.carina.demo.api.DeleteUserMethod;
 import com.solvd.carina.demo.api.GetUserMethods;
 import com.solvd.carina.demo.api.PostUserMethod;
 import com.zebrunner.carina.api.APIMethodPoller;
 import com.zebrunner.carina.api.apitools.validation.JsonCompareKeywords;
+import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import com.zebrunner.carina.core.registrar.tag.Priority;
 import com.zebrunner.carina.core.registrar.tag.TestPriority;
+import org.skyscreamer.jsonassert.JSONCompareMode;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.annotations.Test;
+
+import java.lang.invoke.MethodHandles;
+import java.time.temporal.ChronoUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * This sample shows how create REST API tests.
  *
- * @author qpsdemo
+ * @author Jiwoo
  */
-public class APISampleTest implements IAbstractTest {
+public class APItest implements IAbstractTest {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
     @Test()
-    @MethodOwner(owner = "qpsdemo")
+    @MethodOwner(owner = "Jiwoo")
     public void testCreateUser() throws Exception {
         LOGGER.info("test");
         setCases("4555,54545");
+
+        // Preparing a request
         PostUserMethod api = new PostUserMethod();
         api.setProperties("api/bookings/user.properties");
 
         AtomicInteger counter = new AtomicInteger(0);
 
+        // making a call to endpoint
         api.callAPIWithRetry()
                 .withLogStrategy(APIMethodPoller.LogStrategy.ALL)
                 .peek(rs -> counter.getAndIncrement())
@@ -45,22 +46,24 @@ public class APISampleTest implements IAbstractTest {
                 .pollEvery(1, ChronoUnit.SECONDS)
                 .stopAfter(10, ChronoUnit.SECONDS)
                 .execute();
+
+        // validation of response
         api.validateResponse();
     }
 
     @Test()
-    @MethodOwner(owner = "qpsdemo")
+    @MethodOwner(owner = "Jiwoo")
     public void testCreateUserMissingSomeFields() throws Exception {
         PostUserMethod api = new PostUserMethod();
         api.setProperties("api/bookings/user.properties");
-        api.getProperties().remove("name");
-        api.getProperties().remove("username");
+        api.getProperties().remove("firstname");
+        api.getProperties().remove("lastname");
         api.callAPIExpectSuccess();
         api.validateResponse();
     }
 
     @Test()
-    @MethodOwner(owner = "qpsdemo")
+    @MethodOwner(owner = "Jiwoo")
     public void testGetUsers() {
         GetUserMethods getUsersMethods = new GetUserMethods();
         getUsersMethods.callAPIExpectSuccess();
