@@ -1,0 +1,11 @@
+[2023-07-25 07:12:51] [28] [WARN] Reporting disabled: using no op test run registrar
+[2023-07-25 07:12:51] [28] [INFO] TEST [GSM arena web tests - testLoginWithWrongEmail] STARTED at [00:12:51 2023-07-25]
+[2023-07-25 07:12:51] [28] [INFO] Starting driver session...
+[2023-07-25 07:13:03] [28] [INFO] Driver session started.
+[2023-07-25 07:13:03] [28] [INFO] INFO: opening url 'https://www.gsmarena.com'
+[2023-07-25 07:16:50] [28] [INFO] PASS: element 'loginIcon' is clicked.
+[2023-07-25 07:17:01] [28] [INFO] PASS: keys 's9rowamail@mail' are sent to element 'inputEmail'.
+[2023-07-25 07:17:07] [28] [INFO] PASS: keys 'changeme' are sent to element 'inputPassword'.
+[2023-07-25 07:19:36] [28] [INFO] PASS: element 'submitButton' is clicked.
+[2023-07-25 07:19:44] [28] [INFO] Login result [Reason: User record not found.]
+[2023-07-25 07:20:42] [28] [INFO] TEST [GSM arena web tests - testLoginWithWrongEmail] PASSED at [00:20:42 2023-07-25]

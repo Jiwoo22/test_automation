@@ -1,21 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="1" ignored="0" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[TEST [GSM arena web tests - testSuccessLogin] SKIPPED at [00:20:42 2023-07-25] - javascript error: Cannot read properties of undefined (reading 'textContent')
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4', java.version: '17.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2b0f60c09404e9868ed311d069712ac6, executeScript {script=return document.querySelectorAll('.icon-count', ':before')[6].textContent, args=[]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/zt/5q_190yd0x5...}, goog:chromeOptions: {debuggerAddress: localhost:61765}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 2b0f60c09404e9868ed311d0697...}
+Session ID: 2b0f60c09404e9868ed311d069712ac6
+
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+com.zebrunner.carina.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:52)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+org.openqa.selenium.remote.RemoteWebDriver.executeScript$original$mGmh8KBl(RemoteWebDriver.java:478)
+org.openqa.selenium.remote.RemoteWebDriver.executeScript$original$mGmh8KBl$accessor$VbyDVbPD(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$ISUjNVCx.call(Unknown Source)
+com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:247)
+org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:309)
+net.bytebuddy.renamed.java.lang.Object$ByteBuddy$utCjMPfc.executeScript(Unknown Source)
+com.solvd.carina.demo.gui.components.header.HeaderMenu.getUserName(HeaderMenu.java:106)
+com.solvd.carina.demo.GsmArenaTest.testSuccessLogin(GsmArenaTest.java:52)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-07-24T10:51:57 PDT" name="Carina Demo Tests - Hello World" finished-at="2023-07-24T10:51:57 PDT" duration-ms="141">
+  <suite started-at="2023-07-25T00:12:51 PDT" name="Carina Demo Tests - Web Sample" finished-at="2023-07-25T00:24:08 PDT" duration-ms="677796">
     <groups>
     </groups>
-    <test started-at="2023-07-24T10:51:57 PDT" name="Hello World test" finished-at="2023-07-24T10:51:57 PDT" duration-ms="141">
-      <class name="com.solvd.carina.demo.HelloWorld">
-        <test-method signature="helloWorld()[pri:0, instance:com.solvd.carina.demo.HelloWorld@175c4ae5]" started-at="2023-07-24T10:51:57 PDT" name="helloWorld" finished-at="2023-07-24T10:51:57 PDT" duration-ms="32" status="PASS">
+    <test started-at="2023-07-25T00:12:51 PDT" name="GSM arena web tests" finished-at="2023-07-25T00:24:08 PDT" duration-ms="677796">
+      <class name="com.solvd.carina.demo.GsmArenaTest">
+        <test-method signature="verifyLoginComponent()[pri:0, instance:com.solvd.carina.demo.GsmArenaTest@2298af09]" started-at="2023-07-25T00:12:51 PDT" name="verifyLoginComponent" description="Verify login component" finished-at="2023-07-25T00:16:21 PDT" duration-ms="210624" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- helloWorld -->
-        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.carina.demo.HelloWorld@175c4ae5]" started-at="2023-07-24T10:51:57 PDT" name="onCarinaAfterMethod" finished-at="2023-07-24T10:51:57 PDT" duration-ms="3" status="PASS">
+        </test-method> <!-- verifyLoginComponent -->
+        <test-method signature="testLoginWithWrongEmail()[pri:0, instance:com.solvd.carina.demo.GsmArenaTest@2298af09]" started-at="2023-07-25T00:12:51 PDT" name="testLoginWithWrongEmail" description="Verify Login with wrong email" finished-at="2023-07-25T00:19:45 PDT" duration-ms="414081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithWrongEmail -->
+        <test-method signature="testLoginWithWrongPassword()[pri:0, instance:com.solvd.carina.demo.GsmArenaTest@2298af09]" started-at="2023-07-25T00:12:51 PDT" name="testLoginWithWrongPassword" description="Verify Login with wrong password" finished-at="2023-07-25T00:19:48 PDT" duration-ms="417060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithWrongPassword -->
+        <test-method retried="true" signature="testSuccessLogin()[pri:0, instance:com.solvd.carina.demo.GsmArenaTest@2298af09]" started-at="2023-07-25T00:12:51 PDT" name="testSuccessLogin" description="Verify Success Login" finished-at="2023-07-25T00:19:42 PDT" duration-ms="411489" status="SKIP">
+          <exception class="org.openqa.selenium.JavascriptException">
+            <message>
+              <![CDATA[javascript error: Cannot read properties of undefined (reading 'textContent')
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4', java.version: '17.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2b0f60c09404e9868ed311d069712ac6, executeScript {script=return document.querySelectorAll('.icon-count', ':before')[6].textContent, args=[]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/zt/5q_190yd0x5...}, goog:chromeOptions: {debuggerAddress: localhost:61765}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 2b0f60c09404e9868ed311d0697...}
+Session ID: 2b0f60c09404e9868ed311d069712ac6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of undefined (reading 'textContent')
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4', java.version: '17.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2b0f60c09404e9868ed311d069712ac6, executeScript {script=return document.querySelectorAll('.icon-count', ':before')[6].textContent, args=[]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/zt/5q_190yd0x5...}, goog:chromeOptions: {debuggerAddress: localhost:61765}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 2b0f60c09404e9868ed311d0697...}
+Session ID: 2b0f60c09404e9868ed311d069712ac6
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at com.zebrunner.carina.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:52)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript$original$mGmh8KBl(RemoteWebDriver.java:478)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript$original$mGmh8KBl$accessor$VbyDVbPD(RemoteWebDriver.java)
+at org.openqa.selenium.remote.RemoteWebDriver$auxiliary$ISUjNVCx.call(Unknown Source)
+at com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:247)
+at org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+at org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:309)
+at net.bytebuddy.renamed.java.lang.Object$ByteBuddy$utCjMPfc.executeScript(Unknown Source)
+at com.solvd.carina.demo.gui.components.header.HeaderMenu.getUserName(HeaderMenu.java:106)
+at com.solvd.carina.demo.GsmArenaTest.testSuccessLogin(GsmArenaTest.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.JavascriptException -->
+          <reporter-output>
+            <line>
+              <![CDATA[TEST [GSM arena web tests - testSuccessLogin] SKIPPED at [00:20:42 2023-07-25] - javascript error: Cannot read properties of undefined (reading 'textContent')
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4', java.version: '17.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2b0f60c09404e9868ed311d069712ac6, executeScript {script=return document.querySelectorAll('.icon-count', ':before')[6].textContent, args=[]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/zt/5q_190yd0x5...}, goog:chromeOptions: {debuggerAddress: localhost:61765}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 2b0f60c09404e9868ed311d0697...}
+Session ID: 2b0f60c09404e9868ed311d069712ac6
+
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+com.zebrunner.carina.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:52)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+org.openqa.selenium.remote.RemoteWebDriver.executeScript$original$mGmh8KBl(RemoteWebDriver.java:478)
+org.openqa.selenium.remote.RemoteWebDriver.executeScript$original$mGmh8KBl$accessor$VbyDVbPD(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$ISUjNVCx.call(Unknown Source)
+com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:247)
+org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:309)
+net.bytebuddy.renamed.java.lang.Object$ByteBuddy$utCjMPfc.executeScript(Unknown Source)
+com.solvd.carina.demo.gui.components.header.HeaderMenu.getUserName(HeaderMenu.java:106)
+com.solvd.carina.demo.GsmArenaTest.testSuccessLogin(GsmArenaTest.java:52)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testSuccessLogin -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.carina.demo.GsmArenaTest@2298af09]" started-at="2023-07-25T00:16:21 PDT" name="onCarinaAfterMethod" finished-at="2023-07-25T00:16:21 PDT" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onCarinaAfterMethod -->
-      </class> <!-- com.solvd.carina.demo.HelloWorld -->
-    </test> <!-- Hello World test -->
-  </suite> <!-- Carina Demo Tests - Hello World -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.carina.demo.GsmArenaTest@2298af09]" started-at="2023-07-25T00:20:42 PDT" name="onCarinaAfterMethod" finished-at="2023-07-25T00:20:42 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onCarinaAfterMethod -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.carina.demo.GsmArenaTest@2298af09]" started-at="2023-07-25T00:20:42 PDT" name="onCarinaAfterMethod" finished-at="2023-07-25T00:20:42 PDT" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onCarinaAfterMethod -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.carina.demo.GsmArenaTest@2298af09]" started-at="2023-07-25T00:20:42 PDT" name="onCarinaAfterMethod" finished-at="2023-07-25T00:20:42 PDT" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onCarinaAfterMethod -->
+        <test-method signature="testSuccessLogin()[pri:0, instance:com.solvd.carina.demo.GsmArenaTest@2298af09]" started-at="2023-07-25T00:20:42 PDT" name="testSuccessLogin" description="Verify Success Login" finished-at="2023-07-25T00:24:08 PDT" duration-ms="205923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessLogin -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.carina.demo.GsmArenaTest@2298af09]" started-at="2023-07-25T00:24:08 PDT" name="onCarinaAfterMethod" finished-at="2023-07-25T00:24:08 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onCarinaAfterMethod -->
+      </class> <!-- com.solvd.carina.demo.GsmArenaTest -->
+    </test> <!-- GSM arena web tests -->
+  </suite> <!-- Carina Demo Tests - Web Sample -->
 </testng-results>

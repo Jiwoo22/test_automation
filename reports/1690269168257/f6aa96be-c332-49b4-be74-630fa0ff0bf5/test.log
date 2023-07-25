@@ -1,0 +1,6 @@
+[2023-07-25 07:12:51] [31] [WARN] Reporting disabled: using no op test run registrar
+[2023-07-25 07:12:51] [31] [INFO] TEST [GSM arena web tests - verifyLoginComponent] STARTED at [00:12:51 2023-07-25]
+[2023-07-25 07:12:51] [31] [INFO] Starting driver session...
+[2023-07-25 07:13:03] [31] [INFO] Driver session started.
+[2023-07-25 07:13:03] [31] [INFO] INFO: opening url 'https://www.gsmarena.com'
+[2023-07-25 07:16:21] [31] [INFO] TEST [GSM arena web tests - verifyLoginComponent] PASSED at [00:16:21 2023-07-25]

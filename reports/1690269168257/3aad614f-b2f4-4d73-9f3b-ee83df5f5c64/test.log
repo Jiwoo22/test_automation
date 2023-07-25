@@ -1,0 +1,61 @@
+[2023-07-25 07:12:51] [30] [WARN] Reporting disabled: using no op test run registrar
+[2023-07-25 07:12:51] [30] [INFO] TEST [GSM arena web tests - testSuccessLogin] STARTED at [00:12:51 2023-07-25]
+[2023-07-25 07:12:51] [30] [INFO] Starting driver session...
+[2023-07-25 07:13:03] [30] [INFO] Driver session started.
+[2023-07-25 07:13:03] [30] [INFO] INFO: opening url 'https://www.gsmarena.com'
+[2023-07-25 07:16:09] [30] [INFO] PASS: element 'loginIcon' is clicked.
+[2023-07-25 07:16:23] [30] [INFO] PASS: keys 's9rowa@mail.ru' are sent to element 'inputEmail'.
+[2023-07-25 07:16:30] [30] [INFO] PASS: keys 'changeme' are sent to element 'inputPassword'.
+[2023-07-25 07:17:28] [30] [INFO] PASS: element 'submitButton' is clicked.
+[2023-07-25 07:18:02] [30] [WARN] Unable to capture screenshot during 10 sec!
+[2023-07-25 07:20:42] [30] [WARN] Unable to capture screenshot during 10 sec!
+[2023-07-25 07:20:42] [30] [ERROR] TEST [GSM arena web tests - testSuccessLogin] SKIPPED at [00:20:42 2023-07-25] - javascript error: Cannot read properties of undefined (reading 'textContent')
+  (Session info: chrome=114.0.5735.248)
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4', java.version: '17.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2b0f60c09404e9868ed311d069712ac6, executeScript {script=return document.querySelectorAll('.icon-count', ':before')[6].textContent, args=[]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/zt/5q_190yd0x5...}, goog:chromeOptions: {debuggerAddress: localhost:61765}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 2b0f60c09404e9868ed311d0697...}
+Session ID: 2b0f60c09404e9868ed311d069712ac6
+
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+com.zebrunner.carina.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:52)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+org.openqa.selenium.remote.RemoteWebDriver.executeScript$original$mGmh8KBl(RemoteWebDriver.java:478)
+org.openqa.selenium.remote.RemoteWebDriver.executeScript$original$mGmh8KBl$accessor$VbyDVbPD(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$ISUjNVCx.call(Unknown Source)
+com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:247)
+org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:309)
+net.bytebuddy.renamed.java.lang.Object$ByteBuddy$utCjMPfc.executeScript(Unknown Source)
+com.solvd.carina.demo.gui.components.header.HeaderMenu.getUserName(HeaderMenu.java:106)
+com.solvd.carina.demo.GsmArenaTest.testSuccessLogin(GsmArenaTest.java:52)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)

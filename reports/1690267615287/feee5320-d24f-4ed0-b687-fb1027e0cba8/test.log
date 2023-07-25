@@ -1,0 +1,11 @@
+[2023-07-25 06:47:02] [30] [WARN] Reporting disabled: using no op test run registrar
+[2023-07-25 06:47:02] [30] [INFO] TEST [GSM arena web tests - testSuccessLogin] STARTED at [23:47:02 2023-07-24]
+[2023-07-25 06:47:02] [30] [INFO] Starting driver session...
+[2023-07-25 06:47:15] [30] [INFO] Driver session started.
+[2023-07-25 06:47:15] [30] [INFO] INFO: opening url 'https://www.gsmarena.com'
+[2023-07-25 06:53:28] [30] [INFO] PASS: element 'loginIcon' is clicked.
+[2023-07-25 06:54:01] [30] [INFO] PASS: keys 's9rowa@mail.ru' are sent to element 'inputEmail'.
+[2023-07-25 06:54:37] [30] [INFO] PASS: keys 'changeme' are sent to element 'inputPassword'.
+[2023-07-25 06:54:51] [30] [INFO] PASS: element 'submitButton' is clicked.
+[2023-07-25 06:56:01] [30] [WARN] Unable to capture screenshot during 13 sec!
+[2023-07-25 06:56:12] [30] [INFO] TEST [GSM arena web tests - testSuccessLogin] PASSED at [23:56:12 2023-07-24]

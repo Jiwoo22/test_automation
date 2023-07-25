@@ -1,0 +1,28 @@
+[2023-07-25 07:10:55] [30] [INFO] TEST [GSM arena web tests - testSuccessLogin] STARTED at [00:10:55 2023-07-25]
+[2023-07-25 07:10:55] [30] [INFO] Starting driver session...
+[2023-07-25 07:11:04] [30] [INFO] Driver session started.
+[2023-07-25 07:11:05] [30] [INFO] INFO: opening url 'https://www.gsmarena.com'
+[2023-07-25 07:11:38] [30] [WARN] Unable to capture screenshot during 6 sec!
+[2023-07-25 07:11:38] [30] [ERROR] TEST [GSM arena web tests - testSuccessLogin] FAILED at [00:11:38 2023-07-25] - Unable to open url during 20sec!
+
+org.testng.Assert.fail(Assert.java:110)
+com.zebrunner.carina.webdriver.DriverHelper.openURL(DriverHelper.java:164)
+com.zebrunner.carina.webdriver.DriverHelper.openURL(DriverHelper.java:138)
+com.zebrunner.carina.webdriver.DriverHelper.open(DriverHelper.java:129)
+com.solvd.carina.demo.gui.pages.common.HomePageBase.open(HomePageBase.java:29)
+com.solvd.carina.demo.GsmArenaTest.testSuccessLogin(GsmArenaTest.java:43)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)

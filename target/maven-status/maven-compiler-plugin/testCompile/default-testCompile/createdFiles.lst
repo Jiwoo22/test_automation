@@ -25,6 +25,7 @@ com/solvd/carina/demo/MobileSampleTest.class
 com/solvd/carina/demo/regression/attachfile/AttachFileTest.class
 com/solvd/carina/demo/regression/esg/ArtifactTest.class
 com/solvd/carina/demo/regression/dataprovider/DataproviderRetryTest1.class
+com/solvd/carina/demo/GsmArenaTest.class
 com/solvd/carina/demo/IOSSafariTest.class
 com/solvd/carina/demo/WebSampleTest.class
 com/solvd/carina/demo/AmazonS3Test.class

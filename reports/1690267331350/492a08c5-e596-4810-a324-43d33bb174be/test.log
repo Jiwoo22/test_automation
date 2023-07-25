@@ -1,0 +1,5 @@
+[2023-07-25 06:42:14] [30] [WARN] Reporting disabled: using no op test run registrar
+[2023-07-25 06:42:14] [30] [INFO] TEST [GSM arena web tests - testSuccessLogin] STARTED at [23:42:14 2023-07-24]
+[2023-07-25 06:42:14] [30] [INFO] Starting driver session...
+[2023-07-25 06:42:24] [30] [INFO] Driver session started.
+[2023-07-25 06:42:25] [30] [INFO] INFO: opening url 'https://www.gsmarena.com'

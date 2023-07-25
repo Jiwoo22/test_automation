@@ -6,6 +6,7 @@
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/gui/pages/ios/HomePage.java
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/mobile/gui/pages/common/ContactUsPageBase.java
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/gui/pages/common/AllBrandsPageBase.java
+/Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/gui/components/LoginForm.java
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/api/PostUserMethod.java
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/gui/pages/android/CompareModelsPage.java
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/mobile/gui/pages/common/WelcomePageBase.java
@@ -47,7 +48,6 @@
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/mobile/gui/pages/common/WebViewPageBase.java
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/gui/pages/common/CompareModelsPageBase.java
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/gui/pages/desktop/LoginPage.java
-/Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/gui/pages/common/LoginPageBase.java
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/mobile/gui/pages/common/LoginPageBase.java
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/gui/pages/ios/CompareModelsPage.java
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/soap/AddIntegerMethod.java
@@ -70,6 +70,8 @@
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/mobile/gui/pages/android/ChartsPage.java
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/api/DeleteBookingMethod.java
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/gui/components/compare/CandidateBlock.java
+/Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/utils/User.java
+/Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/utils/UserService.java
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/mobile/gui/pages/common/MapsPageBase.java
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/gui/pages/common/ModelInfoPageBase.java
 /Users/jiwoochoi/Desktop/projects/Solvd_practice/carina/carina-demo/src/main/java/com/solvd/carina/demo/mobile/gui/pages/android/UIElementsPage.java

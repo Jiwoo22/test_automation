@@ -1,0 +1,22 @@
+[2023-07-25 06:40:24] [1] [INFO] 
+============= Basic configuration =============
+env=DEMO
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.gsmarena.com
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+explicit_timeout=30
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+============= Test configuration ==============
+thread_count=5
+===============================================
+
+[2023-07-25 06:40:24] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-07-25 06:40:28] [1] [INFO] Set data-provider-thread-count=1
+[2023-07-25 06:40:28] [1] [INFO] CARINA_CORE_VERSION: 1.1.3
+[2023-07-25 06:41:51] [20] [WARN] Trying to quit driver 'default' on shutdown hook action!

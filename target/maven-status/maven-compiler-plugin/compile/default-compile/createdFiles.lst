@@ -20,6 +20,8 @@ com/solvd/carina/demo/gui/components/footer/FooterMenuBase.class
 com/solvd/carina/demo/gui/pages/ios/HomePage.class
 com/solvd/carina/demo/gui/components/WeValuePrivacyAd.class
 com/solvd/carina/demo/gui/pages/android/BrandModelsPage.class
+com/solvd/carina/demo/utils/User.class
+com/solvd/carina/demo/gui/components/header/HeaderMenu.class
 com/solvd/carina/demo/gui/components/ModelItem.class
 com/solvd/carina/demo/mobile/gui/pages/android/ContactUsPage.class
 com/solvd/carina/demo/mobile/gui/pages/common/WebViewPageBase.class
@@ -44,7 +46,9 @@ com/solvd/carina/demo/gui/pages/desktop/WikipediaHomePage.class
 com/solvd/carina/demo/gui/pages/common/ModelInfoPageBase.class
 com/solvd/carina/demo/gui/pages/common/HomePageBase.class
 com/solvd/carina/demo/utils/ConnectionFactory.class
+com/solvd/carina/demo/gui/components/LoginForm.class
 com/solvd/carina/demo/websocket/WebsocketClientEndpoint$MessageHandler.class
+com/solvd/carina/demo/gui/components/header/HeaderMenuBase.class
 com/solvd/carina/demo/mobile/gui/pages/common/ContactUsPageBase.class
 com/solvd/carina/demo/mobile/gui/pages/android/UIElementsPage.class
 com/solvd/carina/demo/db/models/UserPreference$Name.class
@@ -52,6 +56,7 @@ com/solvd/carina/demo/gui/pages/desktop/NewsPage.class
 com/solvd/carina/demo/websocket/EndpointUtils.class
 com/solvd/carina/demo/gui/pages/android/NewsPage.class
 com/solvd/carina/demo/soap/AddIntegerMethod.class
+com/solvd/carina/demo/gui/pages/desktop/LoginPage.class
 com/solvd/carina/demo/mobile/gui/pages/android/WebViewPage.class
 com/solvd/carina/demo/mobile/gui/pages/common/ChartsPageBase.class
 com/solvd/carina/demo/gui/pages/ios/NewsPage.class
@@ -59,6 +64,7 @@ com/solvd/carina/demo/mobile/gui/pages/android/DragAndDropPage.class
 com/solvd/carina/demo/mobile/gui/pages/android/LoginPage.class
 com/solvd/carina/demo/gui/pages/desktop/WikipediaLocalePage.class
 com/solvd/carina/demo/db/mappers/UserMapper.class
+com/solvd/carina/demo/utils/UserService.class
 com/solvd/carina/demo/db/mappers/UserPreferenceMapper.class
 com/solvd/carina/demo/mobile/gui/pages/android/MapsPage.class
 com/solvd/carina/demo/gui/components/NewsItem.class

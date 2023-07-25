@@ -1,0 +1,12 @@
+[2023-07-25 06:47:02] [29] [WARN] Reporting disabled: using no op test run registrar
+[2023-07-25 06:47:02] [29] [INFO] TEST [GSM arena web tests - testLoginWithWrongPassword] STARTED at [23:47:02 2023-07-24]
+[2023-07-25 06:47:02] [29] [INFO] Starting driver session...
+[2023-07-25 06:47:15] [29] [INFO] Driver session started.
+[2023-07-25 06:47:16] [29] [INFO] INFO: opening url 'https://www.gsmarena.com'
+[2023-07-25 06:52:07] [29] [INFO] PASS: element 'loginIcon' is clicked.
+[2023-07-25 06:52:35] [29] [INFO] PASS: keys 's9rowa@mail.ru' are sent to element 'inputEmail'.
+[2023-07-25 06:52:47] [29] [INFO] PASS: keys 'wrongpassword' are sent to element 'inputPassword'.
+[2023-07-25 06:53:24] [29] [INFO] PASS: element 'submitButton' is clicked.
+[2023-07-25 06:53:57] [29] [WARN] Unable to capture screenshot during 13 sec!
+[2023-07-25 06:54:17] [29] [INFO] Login result [Reason: Wrong password.]
+[2023-07-25 06:54:17] [29] [INFO] TEST [GSM arena web tests - testLoginWithWrongPassword] PASSED at [23:54:17 2023-07-24]
