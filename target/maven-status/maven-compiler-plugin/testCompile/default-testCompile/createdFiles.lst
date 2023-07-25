@@ -3,6 +3,7 @@ com/solvd/carina/demo/regression/dataprovider/DataproviderRetryTest2.class
 com/solvd/carina/demo/IOSPreferencesTest.class
 com/solvd/carina/demo/regression/esg/VNCTest.class
 com/solvd/carina/demo/regression/esg/ProxyTest.class
+com/solvd/carina/demo/BookingAPITest.class
 com/solvd/carina/demo/WebMultipleBrowserTest.class
 com/solvd/carina/demo/DBSampleTest.class
 com/solvd/carina/demo/MobileDragAndDropTest.class
@@ -28,4 +29,5 @@ com/solvd/carina/demo/IOSSafariTest.class
 com/solvd/carina/demo/WebSampleTest.class
 com/solvd/carina/demo/AmazonS3Test.class
 com/solvd/carina/demo/WebSampleSingleDriver.class
+com/solvd/carina/demo/APItest.class
 com/solvd/carina/demo/DataProvidersSampleTest.class

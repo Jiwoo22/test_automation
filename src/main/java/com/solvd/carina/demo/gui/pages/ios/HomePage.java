@@ -2,6 +2,7 @@ package com.solvd.carina.demo.gui.pages.ios;
 
 import java.util.List;
 
+//import com.solvd.carina.demo.gui.components.header.HeaderMenu;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -37,6 +38,9 @@ public class HomePage extends HomePageBase {
     @FindBy(xpath = "//footer")
     private MobileFooterMenu footer;
 
+//    @FindBy(id = "header")
+//    private HeaderMenu headerMenu;
+
     public HomePage(WebDriver driver) {
         super(driver);
         setUiLoadedMarker(newsColumn);
@@ -53,6 +57,10 @@ public class HomePage extends HomePageBase {
         }
         throw new RuntimeException("Unable to open brand: " + brandName);
     }
+
+//    public HeaderMenu getHeaderMenu() {
+//        return headerMenu;
+//    }
 
     @Override
     public MobileFooterMenu getFooterMenu() {

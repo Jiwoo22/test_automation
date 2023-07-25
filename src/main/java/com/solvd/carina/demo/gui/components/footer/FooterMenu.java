@@ -47,10 +47,4 @@ public class FooterMenu extends FooterMenuBase {
         return new NewsPage(driver);
     }
 
-//    public GlossaryPage openGlossaryPage() {
-//        glossaryLink.scrollTo();
-//        glossaryLink.hover();
-//        glossaryLink.click();
-//        return new GlossaryPage(driver);
-//    }
 }

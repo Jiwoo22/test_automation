@@ -3,6 +3,8 @@ package com.solvd.carina.demo.gui.pages.desktop;
 import java.lang.invoke.MethodHandles;
 import java.util.List;
 
+import com.solvd.carina.demo.gui.components.header.HeaderMenu;
+import com.zebrunner.carina.webdriver.decorator.PageOpeningStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
@@ -25,6 +27,9 @@ public class HomePage extends HomePageBase {
     @FindBy(id = "footmenu")
     private FooterMenu footerMenu;
 
+    @FindBy(id = "header")
+    private HeaderMenu headerMenu;
+
     @FindBy(xpath = "//div[contains(@class, 'brandmenu-v2')]//a")
     private List<ExtendedWebElement> brandLinks;
 
@@ -40,11 +45,16 @@ public class HomePage extends HomePageBase {
     public HomePage(WebDriver driver) {
         super(driver);
         setUiLoadedMarker(newsColumn);
+        setPageOpeningStrategy(PageOpeningStrategy.BY_ELEMENT);
     }
 
     @Override
     public FooterMenu getFooterMenu() {
         return footerMenu;
+    }
+
+    public HeaderMenu getHeaderMenu(){
+        return headerMenu;
     }
 
     @Override
@@ -70,6 +80,7 @@ public class HomePage extends HomePageBase {
         return phoneFinderButton;
     }
 
+    @Override
     public AllBrandsPageBase openAllBrandsPage(){
         allBrandsButton.click();
         return initPage(driver, AllBrandsPageBase.class);

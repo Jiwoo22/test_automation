@@ -1,0 +1,4 @@
+[2023-07-24 05:51:57] [28] [WARN] Reporting disabled: using no op test run registrar
+[2023-07-24 05:51:57] [28] [INFO] TEST [Hello World test - helloWorld] STARTED at [10:51:57 2023-07-24]
+[2023-07-24 05:51:57] [28] [INFO] Hello World!
+[2023-07-24 05:51:57] [28] [INFO] TEST [Hello World test - helloWorld] PASSED at [10:51:57 2023-07-24]
