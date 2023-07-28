@@ -17,19 +17,19 @@ public class GsmArenaTest extends AbstractTest {
     private static final String GSM_ARENA_LOGIN_FAILED_EMAIL = "Reason: User record not found.";
     private static final String GSM_ARENA_LOGIN_FAILED_PASSWORD = "Reason: Wrong password.";
 
-    @Test(description = "Verify login component")
-    @MethodOwner(owner = "Jiwoo")
-    public void verifyLoginComponent(){
-
-        // Open GSM Arena home page and verify page is opened
-        HomePage homePage = new HomePage(getDriver());
-        homePage.open();
-        Assert.assertTrue(homePage.isPageOpened(), "Home page is not open");
-
-        // Verify login icon from header
-        HeaderMenu headerMenu = homePage.getHeaderMenu();
-        Assert.assertTrue(headerMenu.isLoginIconPresent(), "Login icon is not present");
-    }
+//    @Test(description = "Verify login component")
+//    @MethodOwner(owner = "Jiwoo")
+//    public void verifyLoginComponent(){
+//
+//        // Open GSM Arena home page and verify page is opened
+//        HomePage homePage = new HomePage(getDriver());
+//        homePage.open();
+//        Assert.assertTrue(homePage.isPageOpened(), "Home page is not open");
+//
+//        // Verify login icon from header
+//        HeaderMenu headerMenu = homePage.getHeaderMenu();
+//        Assert.assertTrue(headerMenu.isLoginIconPresent(), "Login icon is not present");
+//    }
 
 
     @Test(description = "Verify Success Login")

@@ -53,6 +53,11 @@ public class LoginPage extends LoginPageBase implements IMobileUtils {
     }
 
     @Override
+    public void selectFemaleSex() {
+        femaleRadioBtn.click();
+    }
+
+    @Override
     public void checkPrivacyPolicyCheckbox() {
         privacyPolicyCheckbox.click();
     }
@@ -77,6 +82,47 @@ public class LoginPage extends LoginPageBase implements IMobileUtils {
         selectMaleSex();
         checkPrivacyPolicyCheckbox();
         return clickLoginBtn();
+    }
+
+    public boolean isNameInputFieldPresent(){
+        return nameInputField.isPresent();
+    }
+
+    public boolean isPasswordInputFieldPresent(){
+        return passwordInputField.isPresent();
+    }
+
+    public boolean isMaleRadioBtnPresent(){
+        return maleRadioBtn.isPresent();
+    }
+
+    public boolean isFemaleRadioBtnPresent(){
+        return femaleRadioBtn.isPresent();
+    }
+
+    public boolean isPrivacyPolicyCheckboxPresent(){
+        return privacyPolicyCheckbox.isPresent();
+    }
+
+    public boolean isPrivacyPolicyChecked() {
+        return privacyPolicyCheckbox.isChecked();
+    }
+    public boolean isPrivacyPolicyUnchecked() {
+        return !privacyPolicyCheckbox.isChecked();
+    }
+
+    public boolean isMaleRadioBtnChecked() {
+        return maleRadioBtn.isChecked();
+    }
+    public boolean isMaleRadioBtnUnchecked() {
+        return !maleRadioBtn.isChecked();
+    }
+
+    public boolean isFemaleRadioBtnChecked() {
+        return femaleRadioBtn.isChecked();
+    }
+    public boolean isFemaleRadioBtnUnchecked() {
+        return !femaleRadioBtn.isChecked();
     }
 
 }
