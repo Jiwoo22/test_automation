@@ -51,26 +51,18 @@ public class LoginForm extends AbstractUIObject {
     }
 
     public LoginPage loginWithInvalidEmail(UserService user) {
-        inputEmail.type(user.getUser().getEmail());
-        inputPassword.type(user.getUser().getPassword());
-        return submitLoginWithInvalidEmail();
-    }
-
-    public LoginPage submitLoginWithInvalidEmail() {
+        inputEmail.type(user.getUserWithInvalidEmail().getEmail());
+        inputPassword.type(user.getUserWithInvalidEmail().getPassword());
         submitButton.click();
-        LOGGER.info("Login performed");
+        LOGGER.info("Login is not performed due to invalid email");
         return new LoginPage(getDriver());
     }
 
     public LoginPage loginWithInvalidPassword(UserService user) {
-        inputEmail.type(user.getUser().getEmail());
-        inputPassword.type(user.getUser().getPassword());
-        return submitLoginWithInvalidPassword();
-    }
-
-    public LoginPage submitLoginWithInvalidPassword() {
+        inputEmail.type(user.getUserWithInvalidPassword().getEmail());
+        inputPassword.type(user.getUserWithInvalidPassword().getPassword());
         submitButton.click();
-        LOGGER.info("Login performed");
+        LOGGER.info("Login is not performed due to invalid password");
         return new LoginPage(getDriver());
     }
 }

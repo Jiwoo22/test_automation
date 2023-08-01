@@ -36,7 +36,7 @@ public class GsmArenaTest extends AbstractTest {
     @MethodOwner(owner = "Jiwoo Choi")
     public void testSuccessLogin() {
 
-        UserService userCreation = new UserService(R.TESTDATA.get("email"), R.TESTDATA.get("password"));
+        UserService userCreation = new UserService();
 
         // Open GSM Arena home page and verify page is opened*/
         HomePage homePage = new HomePage(getDriver());
@@ -56,7 +56,7 @@ public class GsmArenaTest extends AbstractTest {
     @Test(description = "Verify Login with wrong email")
     public void testLoginWithWrongEmail() {
 
-        UserService userCreation = new UserService(R.TESTDATA.get("invalid_email"), R.TESTDATA.get("password"));
+        UserService userCreation = new UserService();
 
         // Open GSM Arena home page and verify page is opened*/
         HomePage homePage = new HomePage(getDriver());
@@ -76,7 +76,7 @@ public class GsmArenaTest extends AbstractTest {
     @Test(description = "Verify Login with wrong password")
     public void testLoginWithWrongPassword() {
 
-        UserService userCreation = new UserService(R.TESTDATA.get("email"), R.TESTDATA.get("invalid_password"));
+        UserService userCreation = new UserService();
 
         // Open GSM Arena home page and verify page is opened*/
         HomePage homePage = new HomePage(getDriver());
