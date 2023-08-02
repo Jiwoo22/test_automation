@@ -3,6 +3,7 @@ package com.solvd.carina.demo.gui.pages.desktop;
 import java.lang.invoke.MethodHandles;
 import java.util.List;
 
+import com.solvd.carina.demo.gui.components.LoginForm;
 import com.solvd.carina.demo.gui.components.header.HeaderMenu;
 import com.zebrunner.carina.webdriver.decorator.PageOpeningStrategy;
 import org.openqa.selenium.WebDriver;
@@ -85,5 +86,4 @@ public class HomePage extends HomePageBase {
         allBrandsButton.click();
         return initPage(driver, AllBrandsPageBase.class);
     }
-
 }

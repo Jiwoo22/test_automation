@@ -13,16 +13,20 @@ public class LoginPage extends AbstractPage {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
-    @FindBy(xpath="//div[@class='normal-text res-error']/child::p")
+    @FindBy(xpath="//div[@class='normal-text res-error']//child::p")
     private ExtendedWebElement textLoginFail;
 
     public LoginPage(WebDriver driver) {
         super(driver);
     }
 
-    public String loginFailed() {
+    public String getErrorMessege() {
         LOGGER.info("Login result [" + textLoginFail.getText() + "]");
         return textLoginFail.getText();
+    }
+
+    public boolean isMessagePresent(String message) {
+        return textLoginFail.getText().equals(message);
     }
 
 }

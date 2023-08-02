@@ -2,6 +2,7 @@ package com.solvd.carina.demo.gui.components.header;
 
 
 import com.solvd.carina.demo.gui.components.LoginForm;
+import com.solvd.carina.demo.gui.enums.HeaderIconLink;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.SearchContext;
@@ -18,32 +19,14 @@ public class HeaderMenu extends HeaderMenuBase {
     @FindBy(id = "login-popup2")
     public LoginForm loginForm;
 
-    @FindBy(css = ".lines-button.minus")
+    @FindBy(xpath = "//button[contains(@class, 'line-button minus)]")
     private ExtendedWebElement burgerMenu;
 
     @FindBy(id = "logo")
     private ExtendedWebElement logo;
 
-    @FindBy(id = "topsearch-text")
+    @FindBy(id = "topsearch")
     private ExtendedWebElement topSearch;
-
-    @FindBy(css = ".head-icon")
-    private ExtendedWebElement tipUsIcon;
-
-    @FindBy(css = ".head-icon.icon-soc-youtube")
-    private ExtendedWebElement youtubeIcon;
-
-    @FindBy(css = ".head-icon.icon-instagram")
-    private ExtendedWebElement instagramIcon;
-
-    @FindBy(css = ".head-icon.icon-soc-rss2")
-    private ExtendedWebElement rssIcon;
-
-    @FindBy(css = ".head-icon.icon-specs-car")
-    private ExtendedWebElement carSpecsIcon;
-
-    @FindBy(css = ".head-icon.icon-cart")
-    private ExtendedWebElement cartIcon;
 
     @FindBy(css = ".head-icon.icon-login")
     private ExtendedWebElement loginIcon;
@@ -51,11 +34,25 @@ public class HeaderMenu extends HeaderMenuBase {
     @FindBy(css = ".head-icon.icon-user-plus")
     private ExtendedWebElement signUpIcon;
 
-    @FindBy(css = ".icon-count")
+    @FindBy(xpath = "//a[@id='login-active']//span[@class='icon-count'][text()='test.user']")
     private ExtendedWebElement userName;
+
+    @FindBy(xpath = "//div[@id='social-connect']//i[contains(@class, '%s')]")
+    private ExtendedWebElement headerIcon;
+
 
     public HeaderMenu(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
+    }
+
+    public void clickHeaderMenuIcon(HeaderIconLink headerIconLink) {
+        LOGGER.info("Clicking on " + headerIconLink.getValue() + " icon");
+        headerIcon.format(headerIconLink.getValue()).click();
+    }
+
+    public boolean isHeaderMenuIconPresent(HeaderIconLink headerIconLink) {
+        LOGGER.info("Clicking on " + headerIconLink.getValue() + " icon");
+        return headerIcon.format(headerIconLink.getValue()).isElementPresent();
     }
 
     public boolean isLoginIconPresent() {
@@ -65,7 +62,6 @@ public class HeaderMenu extends HeaderMenuBase {
 
     public LoginForm openLoginForm() {
         LOGGER.info("opening login form");
-        loginIcon.click();
         return loginForm;
     }
 
@@ -79,29 +75,8 @@ public class HeaderMenu extends HeaderMenuBase {
         topSearch.type(searchQuery);
     }
 
-    public void clickOnTipUsIcon() {
-        LOGGER.info("Clicking on TipUs icon");
-        tipUsIcon.click();
-    }
-
-    public void clickOnInstagramIcon() {
-        LOGGER.info("Clicking on Instagram icon");
-        instagramIcon.click();
-    }
-
-    public void clickOnYoutubeIcon() {
-        LOGGER.info("Clicking on Youtube icon");
-        youtubeIcon.click();
-    }
-
-
-    public void clickOnRssIcon() {
-        LOGGER.info("Clicking on RSS icon");
-        rssIcon.click();
-    }
-
     public String getUserName() {
-        waitUntil(ExpectedConditions.presenceOfElementLocated(userName.getBy()), 100);
+        waitUntil(ExpectedConditions.presenceOfElementLocated(userName.getBy()), 10);
         JavascriptExecutor js = (JavascriptExecutor) getDriver();
         LOGGER.info((String) js.executeScript("return document.querySelectorAll('.icon-count', ':before')[6].textContent"));
         return (String) js.executeScript("return document.querySelectorAll('.icon-count', ':before')[6].textContent");

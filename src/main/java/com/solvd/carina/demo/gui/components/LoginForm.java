@@ -3,6 +3,7 @@ package com.solvd.carina.demo.gui.components;
 import com.solvd.carina.demo.gui.components.header.HeaderMenu;
 import com.solvd.carina.demo.gui.pages.desktop.HomePage;
 import com.solvd.carina.demo.gui.pages.desktop.LoginPage;
+import com.solvd.carina.demo.utils.User;
 import com.solvd.carina.demo.utils.UserService;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
@@ -38,16 +39,20 @@ public class LoginForm extends AbstractUIObject {
         return loginForm.isElementPresent();
     }
 
-    public HomePage login(UserService user){
-        inputEmail.type(user.getUser().getEmail());
-        inputPassword.type(user.getUser().getPassword());
-        return submitLogin();
+    public void writeToLoginTextBox(String s) {
+        inputEmail.type(s);
     }
 
-    public HomePage submitLogin() {
+    public void writeToPasswordTextBox(String s) {
+        inputPassword.type(s);
+    }
+
+    public LoginPage login(User user){
+        writeToLoginTextBox(user.getEmail());
+        writeToPasswordTextBox(user.getPassword());
         submitButton.click();
         LOGGER.info("Login performed");
-        return new HomePage(getDriver());
+        return new LoginPage(getDriver());
     }
 
     public LoginPage loginWithInvalidEmail(UserService user) {
